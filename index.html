@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="side-picture">
+      <div class="logo">
+        <img src="./images/saga.png" alt="saga">
+      </div>
+      <p>Foto por Dávid Horváth en Unsplash</p>
+    </div>
+
+  <main>
+    <div class="outside-form">
+      <p>Bienvenido a la comunidad online (por ahora ficticia!) de estudiantes de 
+        filosofía de la Universidad Nacional de Colombia! Tú sabes que necesitas algo
+        como esto en tu vida para ayudarte a realizar tus sueños más profundos!
+      </p>
+      <p>Registrate para iniciar!</p>
+    </div>
+    
+    <form action="" method="post" id="button-form">
+      <h2>Aquí vamos!</h2>
+      <p class="item-form"><label for="userName">Nombre </label><input type="text" id="userName" name="userName" required><span></span></p>
+      <p class="item-form"><label for="userLastName">Apellido </label><input type="text" id="userLastName" name="userLastName" required><span></span></p>
+      <p class="item-form"><label for="email">Email </label><input type="email" id="email" name="userEmail" pattern=".+@unal.edu.co" placeholder="ppperezp@unal.edu.co" required><span></span></p>
+      <p class="item-form"><label for="phone">Celular </label><input type="tel" id="phone" name="userPhone"></p>
+      <p class="item-form"><label for="password">Contraseña </label><input type="password" id="password" name="userPassword" required><span></span></p>
+      <p class="item-form"><label for="confirmation">Confirmar Contraseña </label><input type="password" id="confirmation" name="userConfirmation" required><span></span></p>
+    </form>
+
+    <div class="outside-form">
+      <p> <button type="submit" form="button-form">Crear Cuenta</button></p>
+      <p>Ya tienes una cuenta? <a href="">Inicia sesión</a></p>
+    </div>
+  </main>
+</body>
+</html>
